@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.navbar{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    left: -350px;
+    transition: .3s;
+}
+.navbar.open{
+    left: 0;
+}
+.navbar ul li{
+    list-style: none;
+    color: white;
+    font-size: 24px;
+    padding: 20px 24px;
+    /*Link1*/
+}
+.navbar .toggle-btn{
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+.toggle-btn span{
+    width: 45px;
+    height: 5px;
+    display: block;
+    background-color: white;
+    margin-top: 5px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+}
+.btn:hover{
+    background-color: #36454F;
+}
+
+
+@media (max-width: 360px) {
+    /* Probably some parent element that limits the img width */
+    .toggle-btn span{
+        width: 45px;
+        height: 5px;
+        display: block;
+        background: white;
+        margin-top: 5px;
+    }
+    .navbar.open{
+        left: 0;
+    }
+    .navbar{
+        position: absolute;
+        width: 360px;
+        height: 100%;
+        background: black;
+        left: -360px;
+        transition: .3s;
+    }
+  }
